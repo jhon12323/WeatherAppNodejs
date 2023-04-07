@@ -1,0 +1,45 @@
+Aws Short notes:                            aws email-id : freddydsouza238@gmail.com
+                                            passwrd      : Redbull@987
+                                            email passwrd: Redhat@123
+                                            
+                                            kashipaara passwrd : gxyw974w
+
+                                                          
+
+Data Stream : stream real time data,store data within data stream upto 24 hrs.Retention can be extend upto 365 days.
+Data Firehouse: Stream Data with max 60 secs of delay and can store data to s3,RDS,Datalake etc.
+Replicate existing objects using S3 Batch Replication.
+Redshift has no multi-az mode.Snapshots are incremental (only what has changed is saved).
+Columnar storage of data and parallel query engine.Redshift
+Event bridge max target per rule = 5 
+Elastic Transcoder is used to convert media files store in s3 in the format required by consumer devices.
+pilot light is only for critical core system.Disaster recovery.
+full system is up and running but at minimum size.
+migrating db for different engine use SCT(schema conversion tool).
+Aurora Replicas return query results with minimal replica lag -100ms,for scaling minimum storage is 10GB and it can scale upto 128TB.
+Resource access manager can be used to share resource with other account in Organization.
+
+##############################################################
+
+# Prometheus and Grafana installation 
+https://antonputra.com/monitoring/install-prometheus-and-grafana-on-ubuntu/#install-node-exporter-on-ubuntu-2004
+
+##############################################################
+
+Terraform Imp Notes:
+
+Arguments: 2 types (Required and Optional).
+Atrributes: The arguments which we use as a reference in a code is nothing but atrributes.
+Meta-Arguments: Its is not aws provide argument it is terraform specific.
+
+Terraform block:
+required_version focuses on underlying Terraform CLI installed on your desktop
+required_providers block specifies all of the providers required by the current module, mapping each local provider name to a source address and a version constraint.
+# Terraform Init with upgrade option to change provider version
+terraform init -upgrade
+
+
+Tool: former 2 for creating cloudformation template of existing infra in aws
+
+
+
